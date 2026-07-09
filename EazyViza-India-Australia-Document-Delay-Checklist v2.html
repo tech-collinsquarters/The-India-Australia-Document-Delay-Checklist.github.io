@@ -1,0 +1,1307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=794" />
+<title>The India–Australia Document Delay Checklist · EazyViza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ===================== BRAND SYSTEM ===================== */
+  :root{
+    --green:      #0F6B4E;
+    --green-deep: #0A4D38;
+    --green-ink:  #063527;
+    --cream:      #FBF8F3;
+    --cream-2:    #F4EEE1;
+    --paper:      #FFFFFF;
+    --saffron:    #C97B3C;
+    --saffron-2:  #E9C88E;
+    --au-blue:    #1E3A5F;
+    --ink:        #17201C;
+    --muted:      #5C6862;
+    --rule:       #E4DFD5;
+    --warn-bg:    #FBF1E3;
+    --warn-line:  #E5B77A;
+    --ok-bg:      #E8F1EB;
+    --ok-line:    #A9C8B5;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#dcd7cb;font-family:"Manrope",system-ui,sans-serif;color:var(--ink);}
+  a{color:inherit;text-decoration:none;}
+  body{ padding:32px 0; -webkit-font-smoothing:antialiased;}
+
+  /* ===================== PAGE FRAME ===================== */
+  .page{
+    width:210mm;
+    height:297mm;
+    margin:0 auto 24px;
+    background:var(--paper);
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    padding:16mm 16mm 14mm;
+    display:flex;
+    flex-direction:column;
+  }
+  .page.cover{ background:var(--cream); padding:0;}
+  .page.cta{ background:var(--green-ink); color:#F1EDE3;}
+  .page.dark{ background:var(--green-ink); color:#F1EDE3;}
+
+  /* --------- Header --------- */
+  .p-head{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-bottom:7mm;
+    border-bottom:1px solid var(--rule);
+    margin-bottom:7mm;
+  }
+  .p-head .brand{ display:flex;align-items:center;gap:9px;}
+  .p-head .brand img{ height:30px; width:auto; display:block;}
+  .p-head .kicker{
+    font-size:8.5pt; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--muted); font-weight:600;
+  }
+  .cta .p-head, .dark .p-head{ border-bottom-color:rgba(255,255,255,.15);}
+  .cta .p-head .kicker, .dark .p-head .kicker{ color:rgba(241,237,227,.7);}
+  .dark .p-head .brand img, .cta .p-head .brand img{ filter:brightness(0) invert(1);}
+
+  /* --------- Footer --------- */
+  .p-foot{
+    margin-top:auto;
+    padding-top:6mm;
+    border-top:1px solid var(--rule);
+    display:flex; align-items:center; justify-content:space-between;
+    font-size:8pt; color:var(--muted); letter-spacing:.02em;
+  }
+  .p-foot a{ color:var(--green-deep); font-weight:600;}
+  .p-foot .pageno{
+    font-family:"DM Serif Display",serif; font-size:10pt; color:var(--green-deep);
+  }
+  .cta .p-foot, .dark .p-foot{ border-top-color:rgba(255,255,255,.15); color:rgba(241,237,227,.7);}
+  .cta .p-foot a, .dark .p-foot a{ color:var(--saffron-2);}
+  .cta .p-foot .pageno, .dark .p-foot .pageno{ color:var(--saffron-2);}
+
+  /* ===================== TYPE ===================== */
+  h1,h2,h3,h4{ font-family:"DM Serif Display",serif; font-weight:400; margin:0; color:var(--green-ink); letter-spacing:-.005em;}
+  h1{ font-size:44pt; line-height:1.02;}
+  h2{ font-size:24pt; line-height:1.1; margin-bottom:5mm;}
+  h3{ font-size:14pt; line-height:1.2;}
+  p{ font-size:10.5pt; line-height:1.55; margin:0 0 3.5mm; color:var(--ink);}
+  .lede{ font-size:11.5pt; line-height:1.5; color:var(--ink);}
+  .dark h2, .cta h2{ color:#F7EFD8;}
+  .dark p, .cta p{ color:rgba(241,237,227,.88);}
+
+  .eyebrow{
+    font-size:8.5pt; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--saffron); margin-bottom:5mm;
+  }
+  .dark .eyebrow, .cta .eyebrow{ color:var(--saffron-2);}
+
+  em.brand-em{ font-style:italic; font-family:"DM Serif Display",serif; color:var(--green); font-weight:400;}
+
+  /* ===================== COVER ===================== */
+  .cover-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    height:100%;
+  }
+  .cover-left{
+    padding:18mm 16mm 14mm;
+    display:flex; flex-direction:column;
+    position:relative; z-index:2;
+  }
+  .cover-right{
+    position:relative;
+    background:#e6dfd0;
+    overflow:hidden;
+  }
+  .cover-right img{
+    width:100%; height:100%; object-fit:cover;
+    display:block;
+    filter:saturate(.9) contrast(1.02);
+  }
+  .cover-right::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(6,53,39,.05) 0%, rgba(6,53,39,.35) 100%);
+  }
+  .cover-right .stamp{
+    position:absolute;
+    bottom:14mm; left:10mm; right:10mm;
+    padding:6mm 7mm;
+    background:rgba(6,53,39,.85);
+    backdrop-filter:blur(4px);
+    color:#F1EDE3;
+    border-radius:6px;
+    font-size:9pt;
+    line-height:1.5;
+  }
+  .cover-right .stamp b{
+    display:block;
+    font-family:"DM Serif Display",serif;
+    font-size:13pt;
+    color:var(--saffron-2);
+    margin-bottom:1mm;
+    font-weight:400;
+  }
+
+  .cover-top{ display:flex; align-items:center; justify-content:space-between;}
+  .cover-top .logo img{ height:46px; display:block;}
+  .cover-top .mara{
+    display:flex;align-items:center;gap:8px;
+    padding:6px 10px 6px 6px;
+    border:1px solid var(--rule);
+    border-radius:999px;
+    background:#fff;
+    font-size:7.5pt;
+    color:var(--muted);
+    font-weight:600;
+    letter-spacing:.04em;
+    line-height:1.2;
+  }
+  .cover-top .mara .seal{
+    width:22px;height:22px;border-radius:50%;
+    background:var(--green);color:#fff;
+    display:grid;place-items:center;
+    font-family:"DM Serif Display",serif;font-size:10pt;
+  }
+  .cover-top .mara b{color:var(--ink); font-weight:700;}
+
+  .cover-eyebrow{
+    margin-top:26mm;
+    font-size:9pt;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--saffron);font-weight:700;
+    display:flex;align-items:center;gap:10px;
+  }
+  .cover-eyebrow::after{
+    content:""; flex:1; height:1px; background:var(--rule); max-width:24mm;
+  }
+  .cover-title{
+    margin-top:6mm;
+    font-family:"DM Serif Display",serif;
+    font-size:44pt;
+    line-height:.98;
+    color:var(--green-ink);
+    letter-spacing:-.015em;
+  }
+  .cover-title .amp{ font-style:italic; color:var(--saffron); font-weight:400;}
+  .cover-title em{
+    font-style:italic; color:var(--saffron); display:block; margin-top:2mm;
+  }
+  .cover-sub{
+    margin-top:8mm;
+    font-size:12pt;
+    line-height:1.45;
+    color:var(--ink);
+    font-weight:400;
+  }
+  .cover-stats{
+    margin-top:8mm;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:4mm;
+    padding:5mm 0;
+    border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+  }
+  .cover-stats .cs{
+    font-size:8pt;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:600;
+  }
+  .cover-stats .cs b{
+    display:block;
+    font-family:"DM Serif Display",serif;
+    font-size:22pt;
+    color:var(--green-ink);
+    letter-spacing:-.01em;
+    text-transform:none;
+    font-weight:400;
+    margin-bottom:1mm;
+  }
+  .cover-meta{
+    margin-top:auto;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:15px;
+    padding-top:6mm;
+  }
+  .cover-meta .byline{
+    font-size:9pt; line-height:1.5; color:var(--muted); letter-spacing:.02em;
+  }
+  .cover-meta .byline b{color:var(--green-ink); font-weight:700; letter-spacing:.06em; text-transform:uppercase; font-size:8.5pt;}
+  .cover-meta .updated{
+    font-size:8pt; color:var(--muted); letter-spacing:.14em;
+    text-transform:uppercase; text-align:right;
+  }
+  .cover-meta .updated span{
+    display:block;
+    font-family:"DM Serif Display",serif;
+    font-size:12pt; letter-spacing:0; text-transform:none;
+    color:var(--green-ink); margin-top:2px;
+  }
+
+  /* ===================== INTRO STRIP with image ===================== */
+  .hero-band{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8mm;
+    margin-bottom:6mm;
+  }
+  .hero-band .img{
+    height:52mm;
+    border-radius:8px;
+    overflow:hidden;
+    background:#e6dfd0;
+  }
+  .hero-band .img img{ width:100%; height:100%; object-fit:cover; display:block;}
+  .hero-band .txt{
+    display:flex; flex-direction:column; justify-content:center;
+  }
+
+  /* ===================== SITUATION ===================== */
+  .compare{
+    display:grid; grid-template-columns:1fr 1fr; gap:6mm;
+    margin-top:2mm;
+  }
+  .card{
+    border-radius:10px; padding:7mm 7mm;
+    position:relative; height:100%;
+  }
+  .card.ok{ background:var(--ok-bg); border:1px solid var(--ok-line);}
+  .card.warn{ background:var(--warn-bg); border:1px solid var(--warn-line);}
+  .card .tag{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:8pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    padding:4px 10px;border-radius:999px;
+    margin-bottom:5mm;
+  }
+  .card.ok .tag{ background:#fff; color:var(--green-deep);}
+  .card.warn .tag{ background:#fff; color:#8A5217;}
+  .card h3{ margin-bottom:3mm; color:var(--green-ink); font-size:14pt;}
+  .card.warn h3{ color:#6B3F12;}
+  .card p{ font-size:10pt; color:var(--ink); margin:0 0 3mm;}
+  .card ul{ margin:3mm 0 0; padding-left:18px; font-size:9.5pt; color:var(--muted); line-height:1.55;}
+  .card ul li{ margin-bottom:1.5mm;}
+  .card .icon{
+    position:absolute; top:6mm; right:6mm;
+    width:26px;height:26px;border-radius:50%;
+    display:grid;place-items:center;color:#fff;font-weight:700;font-size:13pt;
+  }
+  .card.ok .icon{ background:var(--green);}
+  .card.warn .icon{ background:var(--saffron);}
+
+  .pullquote{
+    margin-top:6mm;
+    padding:6mm 8mm;
+    border-left:3px solid var(--saffron);
+    background:var(--cream);
+    border-radius:2px 8px 8px 2px;
+  }
+  .pullquote p{
+    font-family:"DM Serif Display",serif;
+    font-size:13pt; line-height:1.35;
+    color:var(--green-ink); margin:0;
+  }
+  .pullquote p .accent{ color:var(--saffron); font-style:italic;}
+
+  /* ===================== CHECKLIST ===================== */
+  .cl-hero{
+    display:grid;
+    grid-template-columns:1fr 62mm;
+    gap:8mm;
+    align-items:end;
+    margin-bottom:6mm;
+  }
+  .cl-hero .thumb{
+    height:38mm; border-radius:8px; overflow:hidden; background:#e6dfd0;
+  }
+  .cl-hero .thumb img{ width:100%; height:100%; object-fit:cover; display:block;}
+  .cl-hero .lede{ max-width:100mm; margin:0;}
+
+  .checklist{
+    display:flex; flex-direction:column; gap:3.5mm;
+  }
+  .cl-item{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    gap:5mm;
+    align-items:center;
+    padding:4.5mm 6mm;
+    border:1px solid var(--rule);
+    border-radius:8px;
+    background:#fff;
+  }
+  .cl-item .box{
+    width:20px;height:20px;
+    border:1.8px solid var(--green);
+    border-radius:5px;
+    flex-shrink:0;
+  }
+  .cl-item .txt{
+    font-size:10.5pt; line-height:1.35; color:var(--ink); font-weight:500;
+  }
+  .cl-item .txt small{
+    display:block; font-weight:400; color:var(--muted);
+    font-size:9pt; margin-top:1.5mm; line-height:1.45;
+  }
+  .cl-item .num{
+    font-family:"DM Serif Display",serif;
+    font-size:13pt; color:var(--green); opacity:.5;
+  }
+
+  /* ===================== STEPS ===================== */
+  .steps{ display:flex; flex-direction:column; gap:3mm;}
+  .step{
+    display:grid; grid-template-columns:auto 1fr; gap:5mm;
+    align-items:flex-start;
+    padding:4mm 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .step:last-child{ border-bottom:0;}
+  .step .n{
+    width:32px;height:32px;border-radius:50%;
+    background:var(--green);color:#fff;
+    display:grid;place-items:center;
+    font-family:"DM Serif Display",serif; font-size:14pt;
+    flex-shrink:0;
+  }
+  .step h4{
+    font-family:"Manrope",sans-serif;
+    font-weight:700;
+    font-size:10.5pt;
+    color:var(--green-ink);
+    margin:4px 0 2mm;
+    letter-spacing:-.005em;
+  }
+  .step p{ margin:0; font-size:9.5pt; color:var(--muted); line-height:1.5;}
+
+  .vfs-box{
+    margin-top:6mm;
+    padding:6mm 7mm;
+    background:var(--green-ink);
+    color:#F1EDE3;
+    border-radius:10px;
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:6mm;
+    align-items:center;
+  }
+  .vfs-box .lbl{
+    font-size:8pt; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--saffron-2); font-weight:700; margin-bottom:2.5mm;
+  }
+  .vfs-box .rows{ display:flex; flex-direction:column; gap:1.5mm;}
+  .vfs-box .row{ display:flex; align-items:baseline; gap:10px; font-size:9.5pt; color:#F1EDE3;}
+  .vfs-box .row b{ color:#fff; font-weight:700; min-width:14mm; letter-spacing:.02em;}
+  .vfs-box .sigil{
+    font-family:"DM Serif Display",serif;
+    font-size:32pt; color:var(--saffron-2);
+    line-height:1; opacity:.85;
+  }
+
+  /* ===================== TIMELINE (new page) ===================== */
+  .timeline{
+    display:flex; flex-direction:column; gap:0;
+    margin-top:4mm;
+    position:relative;
+  }
+  .tl-row{
+    display:grid;
+    grid-template-columns:32mm 1fr;
+    gap:6mm;
+    padding:5mm 0;
+    border-bottom:1px dashed var(--rule);
+    position:relative;
+  }
+  .tl-row:last-child{ border-bottom:0;}
+  .tl-when{
+    font-family:"DM Serif Display",serif;
+    font-size:12pt;
+    color:var(--saffron);
+    line-height:1.2;
+  }
+  .tl-when small{
+    display:block;
+    font-family:"Manrope",sans-serif;
+    font-size:8pt;
+    font-weight:700;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:2mm;
+  }
+  .tl-what h4{
+    font-family:"Manrope",sans-serif;
+    font-weight:700;
+    font-size:10.5pt;
+    color:var(--green-ink);
+    margin:0 0 2mm;
+  }
+  .tl-what p{ margin:0; font-size:9.5pt; color:var(--muted); line-height:1.5;}
+  .tl-what .chips{
+    margin-top:2.5mm; display:flex; gap:2mm; flex-wrap:wrap;
+  }
+  .chip{
+    display:inline-block;
+    font-size:7.5pt; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+    padding:3px 8px;
+    background:var(--cream-2);
+    color:var(--green-deep);
+    border-radius:4px;
+  }
+  .chip.saf{ background:#F8E6CB; color:#8A5217;}
+
+  /* ===================== DO/DON'T ===================== */
+  .dd-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:6mm;
+    margin-top:4mm;
+  }
+  .dd{
+    border-radius:10px;
+    padding:6mm 6mm;
+    background:#fff;
+    border:1px solid var(--rule);
+    position:relative;
+  }
+  .dd.do{ border-color:var(--ok-line); background:var(--ok-bg);}
+  .dd.dont{ border-color:var(--warn-line); background:var(--warn-bg);}
+  .dd h3{
+    font-size:14pt; margin-bottom:4mm;
+    display:flex; align-items:center; gap:8px;
+  }
+  .dd.do h3 .b{ background:var(--green); color:#fff;}
+  .dd.dont h3 .b{ background:var(--saffron); color:#fff;}
+  .dd h3 .b{
+    width:22px;height:22px;border-radius:5px;
+    display:grid;place-items:center;
+    font-family:"Manrope",sans-serif; font-size:11pt; font-weight:800;
+  }
+  .dd ul{ list-style:none; margin:0; padding:0;}
+  .dd li{
+    font-size:9.5pt; line-height:1.5;
+    padding:2.5mm 0 2.5mm 20px;
+    color:var(--ink);
+    border-bottom:1px dashed rgba(0,0,0,.08);
+    position:relative;
+  }
+  .dd li:last-child{ border-bottom:0;}
+  .dd li::before{
+    position:absolute; left:0; top:2.5mm;
+    font-family:"DM Serif Display",serif; font-size:11pt; line-height:1.3;
+  }
+  .dd.do li::before{ content:"✓"; color:var(--green);}
+  .dd.dont li::before{ content:"×"; color:var(--saffron); font-weight:700; font-size:14pt; top:1.5mm;}
+
+  /* ===================== PERSONAS ===================== */
+  .personas{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5mm;
+    margin-top:2mm;
+  }
+  .persona{
+    border:1px solid var(--rule);
+    border-radius:10px;
+    background:#fff;
+    overflow:hidden;
+    position:relative;
+    display:flex; flex-direction:column;
+  }
+  .persona .p-img{
+    height:32mm;
+    background:#e6dfd0;
+    position:relative;
+  }
+  .persona .p-img img{
+    width:100%; height:100%; object-fit:cover; display:block;
+    filter:saturate(.9);
+  }
+  .persona .p-body{
+    padding:5mm 6mm 6mm;
+  }
+  .persona h4{
+    font-family:"DM Serif Display",serif;
+    font-weight:400;
+    font-size:14pt;
+    color:var(--green-ink);
+    margin:0 0 2mm;
+  }
+  .persona p{ margin:0 0 3mm; font-size:9.5pt; color:var(--muted); line-height:1.5;}
+  .persona .p-visa{
+    font-size:7.5pt; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--saffron);
+  }
+  .persona .tag2{
+    position:absolute; top:4mm; left:5mm;
+    font-size:7.5pt; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:#fff;
+    padding:3px 8px;
+    background:rgba(6,53,39,.7);
+    backdrop-filter:blur(4px);
+    border-radius:4px;
+    z-index:2;
+  }
+
+  .p5-note{
+    margin-top:6mm;
+    padding:5mm 6mm;
+    background:var(--cream);
+    border-radius:8px;
+    border-left:3px solid var(--green);
+    font-size:9.5pt; color:var(--ink); line-height:1.5;
+  }
+  .p5-note b{ color:var(--green-deep);}
+
+  /* ===================== FAQ ===================== */
+  .faq{ display:flex; flex-direction:column; gap:4mm; margin-top:2mm;}
+  .faq-item{
+    padding:5mm 6mm;
+    background:var(--cream);
+    border-radius:8px;
+    border-left:3px solid var(--green);
+  }
+  .faq-item h4{
+    font-family:"Manrope",sans-serif;
+    font-weight:700;
+    font-size:11pt;
+    color:var(--green-ink);
+    margin:0 0 2mm;
+    display:flex; gap:8px; align-items:baseline;
+  }
+  .faq-item h4 .q{
+    font-family:"DM Serif Display",serif;
+    color:var(--saffron); font-size:14pt;
+    font-weight:400;
+    letter-spacing:-.01em;
+  }
+  .faq-item p{ margin:0; font-size:9.5pt; color:var(--muted); line-height:1.55;}
+
+  /* ===================== CTA ===================== */
+  .cta-content{
+    display:grid;
+    grid-template-columns:1fr 60mm;
+    gap:8mm;
+    align-items:start;
+  }
+  .cta-title{
+    font-family:"DM Serif Display",serif;
+    font-size:30pt;
+    line-height:1.05;
+    color:#F7EFD8;
+    letter-spacing:-.01em;
+    margin-bottom:5mm;
+  }
+  .cta-title em{ color:var(--saffron-2); font-style:italic;}
+  .cta-lede{
+    font-size:11.5pt;
+    color:rgba(241,237,227,.88);
+    line-height:1.55;
+    margin-bottom:8mm;
+  }
+  .cta-btns{ display:flex; flex-direction:column; gap:3mm; margin-bottom:8mm;}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:space-between; gap:10px;
+    padding:4.5mm 7mm;
+    border-radius:999px;
+    font-weight:700;
+    font-size:10.5pt;
+    letter-spacing:.01em;
+    text-decoration:none;
+  }
+  .btn.primary{ background:var(--saffron-2); color:var(--green-ink);}
+  .btn.ghost{ background:transparent; color:#F1EDE3; border:1.5px solid rgba(241,237,227,.35);}
+  .btn .arr{ font-family:"DM Serif Display",serif; font-size:14pt; line-height:1;}
+  .btn .l{ display:flex; align-items:center; gap:10px;}
+
+  .cta-side{
+    border-radius:10px;
+    overflow:hidden;
+    background:#e6dfd0;
+    height:78mm;
+    position:relative;
+  }
+  .cta-side img{ width:100%; height:100%; object-fit:cover; display:block; filter:saturate(.92);}
+  .cta-side::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, transparent 40%, rgba(6,53,39,.7) 100%);
+  }
+  .cta-side .caption{
+    position:absolute; bottom:0; left:0; right:0;
+    padding:6mm; color:#F1EDE3;
+    font-size:9pt; line-height:1.5;
+  }
+  .cta-side .caption b{
+    display:block;
+    font-family:"DM Serif Display",serif;
+    font-size:13pt;
+    color:var(--saffron-2);
+    font-weight:400;
+    margin-bottom:1mm;
+  }
+
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:5mm;
+    padding-top:6mm;
+    margin-top:2mm;
+    border-top:1px solid rgba(255,255,255,.15);
+  }
+  .contact-grid .col .lbl{
+    font-size:8pt; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--saffron-2); font-weight:700; margin-bottom:2mm;
+  }
+  .contact-grid .col .val{
+    font-size:10.5pt; color:#F1EDE3; line-height:1.4; font-weight:500;
+  }
+  .contact-grid .col .val a{ color:#F1EDE3;}
+
+  .disclaimer{
+    margin-top:6mm;
+    padding:5mm 6mm;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:6px;
+    font-size:8pt; line-height:1.55;
+    color:rgba(241,237,227,.7);
+  }
+  .disclaimer b{ color:#F1EDE3; font-weight:700;}
+
+  .mara-inline{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:5px 12px 5px 6px;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:999px;
+    background:rgba(255,255,255,.06);
+    font-size:8.5pt;
+    color:#F1EDE3;
+    font-weight:600;
+    letter-spacing:.04em;
+    margin-bottom:5mm;
+  }
+  .mara-inline .seal{
+    width:22px;height:22px;border-radius:50%;
+    background:var(--saffron-2);color:var(--green-ink);
+    display:grid;place-items:center;
+    font-family:"DM Serif Display",serif;font-size:10pt;
+  }
+
+  /* Decorative arc svg wrapper */
+  .arc{ position:absolute; inset:0; pointer-events:none; z-index:1;}
+
+  /* ===================== PRINT ===================== */
+  @page{ size:A4 portrait; margin:0;}
+  @media print{
+    body{ background:#fff; padding:0;}
+    .page{
+      margin:0;
+      box-shadow:none;
+      page-break-after:always;
+      break-after:page;
+    }
+    .page:last-child{ page-break-after:auto;}
+    img{ -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- PAGE 1 — COVER (with hero image)                              -->
+<!-- ============================================================ -->
+<section class="page cover">
+  <div class="cover-grid">
+    <div class="cover-left">
+      <svg class="arc" viewBox="0 0 210 297" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <pattern id="dots" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r=".6" fill="#0F6B4E" opacity=".08"/>
+          </pattern>
+        </defs>
+        <rect x="0" y="200" width="120" height="97" fill="url(#dots)"/>
+        <path d="M -10 240 Q 60 60 130 200"
+              fill="none" stroke="#C97B3C" stroke-width=".5"
+              stroke-dasharray="1.4 2.6" opacity=".55"/>
+        <circle cx="18" cy="240" r="1.6" fill="#C97B3C"/>
+        <circle cx="122" cy="196" r="1.6" fill="#1E3A5F"/>
+      </svg>
+
+      <div class="cover-top">
+        <div class="logo"><img src="assets/eazyviza-logo.png" alt="EazyViza"></div>
+        <div class="mara">
+          <div class="seal">L</div>
+          <div>Lawyer-supervised<br><b>Registered Australian Lawyer</b></div>
+        </div>
+      </div>
+
+      <div class="cover-eyebrow">A Free Guide · July 2026</div>
+
+      <h1 class="cover-title">
+        The India<span class="amp">–</span>Australia<br>
+        Document Delay
+        <em>Checklist.</em>
+      </h1>
+
+      <p class="cover-sub">
+        A calm, lawyer-supervised playbook for
+        Indians in Australia navigating the VFS Global
+        service pause — so your Australian visa
+        timeline stays on track.
+      </p>
+
+      <div class="cover-stats">
+        <div class="cs"><b>6</b>Point Checklist</div>
+        <div class="cs"><b>5</b>Action Steps</div>
+        <div class="cs"><b>4</b>Visa Personas</div>
+      </div>
+
+      <div class="cover-meta">
+        <div class="byline">
+          <b>Prepared by</b><br>
+          EazyViza · Lawyer-supervised<br>
+          Australian visa services
+        </div>
+        <div class="updated">
+          Last updated<span>July&nbsp;2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-right">
+      <img src="assets/img-cover-woman.jpg" alt="Indian applicant reviewing documents in Australia">
+      <div class="stamp">
+        <b>Straightforward.</b>
+        Written by advisors, reviewed by a registered
+        Australian immigration lawyer — no jargon, no scare tactics.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 2 — SITUATION                                            -->
+<!-- ============================================================ -->
+<section class="page">
+  <div class="p-head">
+    <div class="brand"><img src="assets/eazyviza-logo.png" alt="EazyViza"></div>
+    <div class="kicker">01 · The Situation</div>
+  </div>
+
+  <div class="eyebrow">Before anything else</div>
+  <h2>First, don't panic — here's what's<br>actually happening.</h2>
+
+  <div class="hero-band">
+    <div class="img">
+      <img src="assets/img-documents-flatlay.jpg" alt="Indian passport and documents flat lay">
+    </div>
+    <div class="txt">
+      <p class="lede" style="margin:0;">
+        Indian passport, visa and OCI services through
+        VFS Global in Australia are currently paused.
+        That has caused understandable worry — but the
+        picture is more workable than it looks.
+      </p>
+      <p style="margin-top:3mm; color:var(--muted); font-size:9.5pt;">
+        Here's what is, and is not, affected — and
+        exactly where our team can help you move forward.
+      </p>
+    </div>
+  </div>
+
+  <div class="compare">
+    <div class="card ok">
+      <div class="icon">✓</div>
+      <div class="tag">Not affected</div>
+      <h3>The Australian visa system.</h3>
+      <p>Home Affairs is operating normally. Your Australian file can progress today.</p>
+      <ul>
+        <li>Lodgements and decisions continue</li>
+        <li>Bridging visas remain valid</li>
+        <li>Health, English &amp; forms unaffected</li>
+        <li>Sponsor obligations continue as usual</li>
+      </ul>
+    </div>
+    <div class="card warn">
+      <div class="icon">!</div>
+      <div class="tag">Delayed</div>
+      <h3>Indian-issued documents.</h3>
+      <p>Anything that must come from Indian authorities in Australia may be delayed.</p>
+      <ul>
+        <li>Passport renewal &amp; re-issue</li>
+        <li>PCC (Police Clearance Certificate)</li>
+        <li>OCI card processing</li>
+        <li>Attested birth &amp; marriage records</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pullquote">
+    <p>The delay is <span class="accent">real</span>, but it is
+      <span class="accent">navigable.</span> The applicants who move
+      calmly and early are the ones who protect their timeline.</p>
+  </div>
+
+  <div class="p-foot">
+    <div>eazyviza.com  ·  hello@eazyviza.com</div>
+    <div class="pageno">02</div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 3 — CHECKLIST (HERO)                                     -->
+<!-- ============================================================ -->
+<section class="page">
+  <div class="p-head">
+    <div class="brand"><img src="assets/eazyviza-logo.png" alt="EazyViza"></div>
+    <div class="kicker">02 · The Checklist</div>
+  </div>
+
+  <div class="cl-hero">
+    <div>
+      <div class="eyebrow">The Core Checklist</div>
+      <h2 style="margin-bottom:3mm;">Your document<br>readiness checklist.</h2>
+      <p class="lede">
+        Tick each item honestly. If you can't tick one, that's
+        your next action — not a reason to worry.
+      </p>
+    </div>
+    <div class="thumb">
+      <img src="assets/img-documents-flatlay.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="checklist">
+    <div class="cl-item">
+      <div class="box"></div>
+      <div class="txt">
+        Is your Indian passport valid for your entire Australian visa timeline?
+        <small>Includes any bridging, extension or onshore lodgement windows you can foresee.</small>
+      </div>
+      <div class="num">01</div>
+    </div>
+    <div class="cl-item">
+      <div class="box"></div>
+      <div class="txt">
+        Do you need an Indian Police Clearance Certificate (PCC)?
+        <small>Common for skilled, partner, permanent and citizenship pathways.</small>
+      </div>
+      <div class="num">02</div>
+    </div>
+    <div class="cl-item">
+      <div class="box"></div>
+      <div class="txt">
+        Do you need Indian birth or marriage certificates for a partner or family visa?
+        <small>Certified copies, translations and apostille where relevant.</small>
+      </div>
+      <div class="num">03</div>
+    </div>
+    <div class="cl-item">
+      <div class="box"></div>
+      <div class="txt">
+        Have you collected any documents already processed before the pause?
+        <small>Anything sitting at VFS or ready-for-pickup — retrieve or track it.</small>
+      </div>
+      <div class="num">04</div>
+    </div>
+    <div class="cl-item">
+      <div class="box"></div>
+      <div class="txt">
+        Have you noted the current VFS support contacts?
+        <small>Phone and email are on the next page — keep them in your records.</small>
+      </div>
+      <div class="num">05</div>
+    </div>
+    <div class="cl-item">
+      <div class="box"></div>
+      <div class="txt">
+        Is everything else on your Australian file ready to lodge the moment services resume?
+        <small>Health, English, forms, sponsorship, evidence — pre-prepared saves weeks.</small>
+      </div>
+      <div class="num">06</div>
+    </div>
+  </div>
+
+  <div class="p-foot">
+    <div>eazyviza.com  ·  hello@eazyviza.com</div>
+    <div class="pageno">03</div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 4 — STEPS                                                -->
+<!-- ============================================================ -->
+<section class="page">
+  <div class="p-head">
+    <div class="brand"><img src="assets/eazyviza-logo.png" alt="EazyViza"></div>
+    <div class="kicker">03 · Your Next Moves</div>
+  </div>
+
+  <div class="eyebrow">Act calmly, act early</div>
+  <h2>Five steps to protect your<br>Australian visa timeline.</h2>
+
+  <div class="steps">
+    <div class="step">
+      <div class="n">1</div>
+      <div>
+        <h4>Map every Indian document your Australian application needs.</h4>
+        <p>Write them down in one list — passport, PCC, birth, marriage, OCI, academic transcripts. If you don't know what's required, that's Step 2.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="n">2</div>
+      <div>
+        <h4>Get a lawyer-supervised review of your case.</h4>
+        <p>A short review confirms exactly which documents are essential, which are optional, and which have workable alternatives (like statutory declarations or apostilled substitutes).</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="n">3</div>
+      <div>
+        <h4>Prepare everything you <em>can</em> control on the Australian side.</h4>
+        <p>Health exams, English tests, forms, sponsor evidence, statutory declarations, employment records — the Australian file can be lodgement-ready today.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="n">4</div>
+      <div>
+        <h4>Log VFS support contacts and keep any pending references.</h4>
+        <p>Application numbers, receipts, tracking IDs — keep a folder. When services resume, the first-in queue moves fastest.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="n">5</div>
+      <div>
+        <h4>Communicate proactively with Home Affairs if a deadline is looming.</h4>
+        <p>Written requests for reasonable extensions, supported by evidence of the pause, are far stronger than silence. We can draft these for you.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="vfs-box">
+    <div>
+      <div class="lbl">VFS Global — Support Line</div>
+      <div class="rows">
+        <div class="row"><b>Phone</b><span>03 9956 3830  ·  9:00 am – 3:30 pm AEST, Mon–Fri</span></div>
+        <div class="row"><b>Email</b><a href="mailto:info.ind_aus@vfshelpline.com">info.ind_aus@vfshelpline.com</a></div>
+        <div class="row"><b>Status</b><span>Always confirm the latest position via official channels.</span></div>
+      </div>
+    </div>
+    <div class="sigil">☎</div>
+  </div>
+
+  <div class="p-foot">
+    <div>eazyviza.com  ·  hello@eazyviza.com</div>
+    <div class="pageno">04</div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 5 — TIMELINE (new value page)                            -->
+<!-- ============================================================ -->
+<section class="page">
+  <div class="p-head">
+    <div class="brand"><img src="assets/eazyviza-logo.png" alt="EazyViza"></div>
+    <div class="kicker">04 · Your 30-day Plan</div>
+  </div>
+
+  <div class="eyebrow">A realistic timeline</div>
+  <h2>What to do in the next<br>30 days, week by week.</h2>
+  <p class="lede" style="max-width:150mm; margin-bottom:2mm;">
+    Not everything is urgent — but nothing should wait indefinitely.
+    Here is a sensible cadence most applicants can follow.
+  </p>
+
+  <div class="timeline">
+
+    <div class="tl-row">
+      <div class="tl-when">
+        <small>Days 1 – 3</small>
+        Today.
+      </div>
+      <div class="tl-what">
+        <h4>Assess &amp; document your situation.</h4>
+        <p>List every Indian document your case needs. Confirm your Australian visa subclass, deadlines, and any bridging arrangements. Screenshot official VFS status pages for your records.</p>
+        <div class="chips"><span class="chip">Zero cost</span><span class="chip">30 minutes</span></div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-when">
+        <small>Week 1</small>
+        This week.
+      </div>
+      <div class="tl-what">
+        <h4>Book a lawyer-supervised review.</h4>
+        <p>A short consultation confirms which documents are truly essential, which have alternatives, and where you have negotiating room with Home Affairs.</p>
+        <div class="chips"><span class="chip saf">High leverage</span><span class="chip">30–45 min</span></div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-when">
+        <small>Weeks 1 – 2</small>
+        Parallel work.
+      </div>
+      <div class="tl-what">
+        <h4>Complete every Australian-side task.</h4>
+        <p>Health exams, English tests, form 80/1221, sponsor declarations, financial evidence, statutory declarations from family &amp; friends.</p>
+        <div class="chips"><span class="chip">Bookable now</span><span class="chip">You control it</span></div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-when">
+        <small>Weeks 2 – 3</small>
+        Contingency.
+      </div>
+      <div class="tl-what">
+        <h4>Prepare substitutes and extension requests.</h4>
+        <p>Draft statutory declarations, alternate proofs of identity and relationship. If a deadline is approaching, lodge a written extension request with evidence of the service pause.</p>
+        <div class="chips"><span class="chip saf">Legal support recommended</span></div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-when">
+        <small>Week 4+</small>
+        The moment services resume.
+      </div>
+      <div class="tl-what">
+        <h4>Move first, move fast.</h4>
+        <p>Submit all pending Indian document applications on day one of resumption. Applicants who are pre-prepared regain weeks — sometimes months — over those who wait to react.</p>
+        <div class="chips"><span class="chip">Queue advantage</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="p-foot">
+    <div>eazyviza.com  ·  hello@eazyviza.com</div>
+    <div class="pageno">05</div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 6 — PERSONAS (with photos)                               -->
+<!-- ============================================================ -->
+<section class="page">
+  <div class="p-head">
+    <div class="brand"><img src="assets/eazyviza-logo.png" alt="EazyViza"></div>
+    <div class="kicker">05 · Who this affects</div>
+  </div>
+
+  <div class="eyebrow">Quick scenarios</div>
+  <h2>Does this apply to you?</h2>
+  <p class="lede" style="max-width:150mm; margin-bottom:6mm;">
+    The delay touches different visa journeys differently.
+    Find the profile closest to yours — most people fit more than one.
+  </p>
+
+  <div class="personas">
+
+    <div class="persona">
+      <span class="tag2">01 · Student</span>
+      <div class="p-img"><img src="assets/img-student.jpg" alt="Indian student in Australia"></div>
+      <div class="p-body">
+        <h4>Priya — Melbourne, Masters.</h4>
+        <p>Renewals, extensions and post-study 485 timing depend on a valid Indian passport and academic verification — both trip-points during the pause.</p>
+        <div class="p-visa">Subclass 500 · 485</div>
+      </div>
+    </div>
+
+    <div class="persona">
+      <span class="tag2">02 · Partner</span>
+      <div class="p-img"><img src="assets/img-cover-woman.jpg" alt="Partner visa applicant"></div>
+      <div class="p-body">
+        <h4>Rahul &amp; Sarah — Sydney.</h4>
+        <p>Subclass 309 / 820 files almost always need Indian marriage or birth documents. Delays here can push relationship-evidence timelines out of sync.</p>
+        <div class="p-visa">Subclass 309 · 820 · 100 · 801</div>
+      </div>
+    </div>
+
+    <div class="persona">
+      <span class="tag2">03 · Skilled Worker</span>
+      <div class="p-img"><img src="assets/img-advisor.jpg" alt="Indian skilled worker in Australia"></div>
+      <div class="p-body">
+        <h4>Anjali — Brisbane, IT.</h4>
+        <p>189, 190, 482, 186 applicants regularly need Indian PCCs and passport renewals. A pause here can stall an otherwise decision-ready file.</p>
+        <div class="p-visa">Subclass 189 · 190 · 482 · 186</div>
+      </div>
+    </div>
+
+    <div class="persona">
+      <span class="tag2">04 · Family &amp; Parents</span>
+      <div class="p-img"><img src="assets/img-family.jpg" alt="Indian family in Australia"></div>
+      <div class="p-body">
+        <h4>The Sharma family — Perth.</h4>
+        <p>143, 103, 804 and child visas rely heavily on Indian civil documents. Building parallel plans now avoids losing a place in the queue later.</p>
+        <div class="p-visa">Subclass 143 · 103 · 804 · 101</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="p5-note">
+    <b>Not sure which applies?</b> Most cases sit across two profiles.
+    Our lawyer-supervised team maps every affected document against
+    your specific visa subclass — before it becomes a problem.
+  </div>
+
+  <div class="p-foot">
+    <div>eazyviza.com  ·  hello@eazyviza.com</div>
+    <div class="pageno">06</div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 7 — DO / DON'T + FAQ                                     -->
+<!-- ============================================================ -->
+<section class="page">
+  <div class="p-head">
+    <div class="brand"><img src="assets/eazyviza-logo.png" alt="EazyViza"></div>
+    <div class="kicker">06 · Do &amp; Don't · FAQ</div>
+  </div>
+
+  <div class="eyebrow">Field-tested rules</div>
+  <h2>What to do — and what<br>to quietly avoid.</h2>
+
+  <div class="dd-grid">
+    <div class="dd do">
+      <h3><span class="b">✓</span> Do</h3>
+      <ul>
+        <li>Keep dated copies of every VFS receipt, tracking ID and communication.</li>
+        <li>Ask Home Affairs, in writing, for reasonable time to comply — with evidence.</li>
+        <li>Prepare statutory declarations for identity, relationship &amp; residence.</li>
+        <li>Book health &amp; English tests <em>now</em>, not when services resume.</li>
+        <li>Move your Australian file to “decision-ready” so you lodge the moment you can.</li>
+      </ul>
+    </div>
+    <div class="dd dont">
+      <h3><span class="b">×</span> Don't</h3>
+      <ul>
+        <li>Ignore Home Affairs deadlines — silence is treated as non-compliance.</li>
+        <li>Withdraw and re-apply out of panic. It usually costs time and money.</li>
+        <li>Rely on informal WhatsApp advice for something legally binding.</li>
+        <li>Send originals of any Indian document until you have certified copies.</li>
+        <li>Assume the pause automatically extends your Australian visa deadlines.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="eyebrow" style="margin-top:8mm;">Frequently asked</div>
+
+  <div class="faq">
+    <div class="faq-item">
+      <h4><span class="q">Q.</span>Does the VFS pause extend my Australian visa deadline?</h4>
+      <p>No, not automatically. Australian deadlines remain in force. However, you can request reasonable extensions in writing — and evidence of the pause materially strengthens that request.</p>
+    </div>
+    <div class="faq-item">
+      <h4><span class="q">Q.</span>Can I lodge my Australian application without the Indian document?</h4>
+      <p>In many cases yes — with a statutory declaration explaining the delay and a commitment to provide the document when available. Whether this is safe depends on your subclass.</p>
+    </div>
+    <div class="faq-item">
+      <h4><span class="q">Q.</span>My PCC expired during the pause. What now?</h4>
+      <p>Document the situation, request an extension, and prepare all supporting evidence for a fresh PCC the moment services resume. We can help draft the extension request.</p>
+    </div>
+    <div class="faq-item">
+      <h4><span class="q">Q.</span>Is EazyViza able to help with Indian consular matters?</h4>
+      <p>No — we are Australian visa specialists. But we routinely work around Indian document gaps by structuring the Australian side of your case correctly.</p>
+    </div>
+  </div>
+
+  <div class="p-foot">
+    <div>eazyviza.com  ·  hello@eazyviza.com</div>
+    <div class="pageno">07</div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 8 — CTA                                                  -->
+<!-- ============================================================ -->
+<section class="page cta">
+  <div class="p-head">
+    <div class="brand"><img src="assets/eazyviza-logo.png" alt="EazyViza"></div>
+    <div class="kicker">07 · Next step</div>
+  </div>
+
+  <div class="mara-inline">
+    <div class="seal">L</div>
+    Lawyer-supervised  ·  Registered Australian Immigration Lawyers
+  </div>
+
+  <div class="cta-content">
+    <div>
+      <h2 class="cta-title">
+        Worried a document delay could <em>hold up</em> your Australian&nbsp;visa?
+      </h2>
+
+      <p class="cta-lede">
+        Our lawyer-supervised team can review your situation
+        and build a plan around it — so you're ready the
+        moment services resume. One short call. No obligation.
+      </p>
+
+      <div class="cta-btns">
+        <a class="btn primary" href="https://eazyviza.com/?utm_source=lead_magnet&utm_medium=pdf&utm_campaign=india_australia_document_delay&utm_content=cta_primary" target="_blank" rel="noopener">
+          <span class="l">Book a Free Consultation</span>
+          <span class="arr">→</span>
+        </a>
+        <a class="btn ghost" href="https://wa.me/61000000000?text=Hi%20EazyViza%2C%20I%20read%20your%20India-Australia%20Document%20Delay%20Checklist%20and%20need%20help." target="_blank" rel="noopener">
+          <span class="l">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.7 1.5c6.5 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.7 9.7 0 0 1-1.5-5.1c0-5.4 4.4-9.8 9.9-9.8 2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.9 9.8zm5.4-7.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1c-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.4.1-.6l.5-.5c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.8-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1.1 1-1.1 2.5 1.1 2.9 1.3 3.1c.1.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+            Message us on WhatsApp
+          </span>
+          <span class="arr">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="cta-side">
+      <img src="assets/img-advisor.jpg" alt="Lawyer-supervised advisor at EazyViza">
+      <div class="caption">
+        <b>Real advisors. Real oversight.</b>
+        Every plan is reviewed by a registered Australian immigration lawyer before it reaches you.
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-grid">
+    <div class="col">
+      <div class="lbl">Website</div>
+      <div class="val"><a href="https://eazyviza.com/?utm_source=lead_magnet&utm_medium=pdf&utm_campaign=india_australia_document_delay&utm_content=footer_link" target="_blank" rel="noopener">eazyviza.com</a></div>
+    </div>
+    <div class="col">
+      <div class="lbl">Email</div>
+      <div class="val"><a href="mailto:hello@eazyviza.com">eazyviza@collinsquarters.com</a></div>
+    </div>
+    <div class="col">
+      <div class="lbl">Phone</div>
+      <div class="val">+61411888504</div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <b>General information only, not legal advice.</b>
+    All applications are supervised by registered Australian
+    immigration lawyers.
+  </div>
+
+  <div class="p-foot">
+    <div>eazyviza.com  ·  eazyviza@collinsquarters.com  ·  © 2026 EazyViza</div>
+    <div class="pageno">08</div>
+  </div>
+</section>
+
+</body>
+</html>
